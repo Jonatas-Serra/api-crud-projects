@@ -14,7 +14,7 @@ describe('ProductsController', () => {
     controller = module.get<ProductsController>(ProductsController)
   })
 
-  it('should be defined', () => {
+  it('should be able to create a product', () => {
     expect(controller).toBeDefined()
   })
 })
