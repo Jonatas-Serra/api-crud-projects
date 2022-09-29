@@ -5,7 +5,7 @@ import { ProductsModule } from './products/products.module'
 @Module({
   imports: [
     MongooseModule.forRoot(
-      `mongodb+srv://${process.env.USERMONGO}:${process.env.SECRETMONGO}@crudapp.eiecace.mongodb.net/?retryWrites=true&w=majority`,
+      `mongodb+srv://crudapp:MAvfxBB4INbXvwUA@crudapp.eiecace.mongodb.net/?retryWrites=true&w=majority`,
     ),
     ProductsModule,
   ],
