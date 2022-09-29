@@ -3,12 +3,11 @@ import { AppModule } from './app.module'
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule)
+  const PORT = process.env.PORT || 3000
+
   app.enableCors()
-  await app.listen(process.env.PORT || 3000, () => {
-    console.log(
-      'Express server listening on port %d in %s mode',
-      this.address().port,
-    )
-  })
+  await app.listen(PORT, () =>
+    console.log(`Server is listening on port ${PORT}...`),
+  )
 }
 bootstrap()
